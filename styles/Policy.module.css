@@ -1,0 +1,38 @@
+.policy{
+    border: .5px solid rgba(255, 255, 255, .3);
+        border-bottom-color: rgba(255, 255, 255, 0.3);
+        border-bottom-style: solid;
+        border-bottom-width: 0.5px;
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    margin: 0px 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    min-height: 80vh;
+}
+.policy h1{
+    text-align: center;
+}
+.content{
+    margin: 20px 200px;
+}
+.content a{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 900px){
+    .content{
+        margin: 20px 150px;
+    }
+    .policy{
+        margin: 0px 30px;
+    }
+}
+@media (max-width: 700px){
+    .content{
+        margin: 20px 10px;
+    }
+    .policy{
+        margin: 0px 10px;
+    }
+}

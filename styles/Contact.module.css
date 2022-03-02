@@ -1,0 +1,89 @@
+.main{
+    display: grid;
+    justify-content: center;
+    border: .5px solid rgba(255, 255, 255, .3);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    margin: 20px 40px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    min-height: 80vh;
+}
+.h2{
+    border: .5px solid rgba(255, 255, 255, .3);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    margin: 20px 40px;
+    border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+ text-align: center;
+}
+.formWord{
+display: grid;
+margin-top: 30px;
+justify-content: center;
+}
+
+.input100{
+    margin: 20px 0px;
+    min-height: 30px;
+    min-width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+}
+.input100 text{
+    background-color: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.text{
+    min-height: 30px;
+    min-width: 300px;
+    max-width: 300px;
+    border: none;
+    border-bottom: 1px solid black;
+    background: none;
+}
+.note{
+    text-align: center;
+    margin: 10px 30px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+.btn button {
+    font-size: 17px;
+    padding: 20px;
+    border: .5px solid rgba(255, 255, 255, .3);
+    border-left: 2px solid rgba(255, 255, 255, .3);
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .1);
+    cursor: pointer;
+}
+.btn button:hover{
+    font-size: 18px;
+    background: rgba(255, 255, 255, .3);
+    color: blue;
+}
+.row{
+    text-align: center;
+    margin: 0px 30px;
+}
+.thanks{
+    text-align: center;
+}
+@media only screen and (max-width: 1060px){
+    .main{
+        margin: 20px 20px;
+    }
+    .h2{
+        margin: 20px 20px;
+    }
+}
+
