@@ -4,5 +4,5 @@ Allow: /
 
 # for sitemap
 
-sitemap: https://iapioc.com/posts.sitemap.xml
-sitemap: https://iapioc.com/api/pages.sitemap.xml
+sitemap: https://beautysecretshop.com/posts.sitemap.xml
+sitemap: https://beautysecretshop.com/api/pages.sitemap.xml

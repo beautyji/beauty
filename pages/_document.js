@@ -9,7 +9,7 @@ class MyDocument extends Document {
         <Html lang="en">
           <Head>
           <link rel = "icon" href = 
-            "/img/logo2.png" 
+            "/img/2.png" 
         type = "image/x-icon"/>
           </Head>
           <body>
