@@ -6,7 +6,7 @@ import styles from '../styles/Home.module.css'
 import { sanityClient, urlFor } from "../lib/sanity";
 
 
-const postsQuery = `*[_type == "post"][0..8]{
+const postsQuery = `*[_type == "post"]{
   _id,
   title,
   slug,
@@ -31,7 +31,7 @@ export default function Home({posts}) {
       </div>
     </div>
       
-      <h2 className={styles.h2}>Our Latest Posts</h2>
+      <h2 className={styles.h2}>Our Blogs For You</h2>
     
     
     <div className={styles.topics}>
@@ -41,9 +41,6 @@ export default function Home({posts}) {
              {posts?.length > 0 &&
           posts.map((post) => (
       <div className={styles.card}>
-        <div className={styles.card_header}>
-          <img src={urlFor(post.mainImage).url()} alt={post.title} />
-        </div>
         <div className={styles.card_body}>
           <h4>{post.title}</h4>
           <p>

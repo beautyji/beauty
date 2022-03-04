@@ -29,47 +29,24 @@ export default function Navbar(){
                         </Link>
                     </li>
                     <li className="navitem">
-                        <Link href='/cosmetics'>
-                          <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>Cosmetics</a>
-                        </Link>
-                    </li>
-                    <li className="navitem">
-                        <Link href='/skin-Care'>
-                          <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>Skincare</a>
-                        </Link>
-                    </li>
-
-                    <li className="navitem">
-                        <Link href='/nail-polish'>
-                          <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>Nail Polish</a>
-                        </Link>
-                    </li>
-
-                    <li className="navitem">
-                        <Link href='/salons'>
-                          <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>Salons</a>
-                        </Link>
-                    </li>
-                    <li className="navitem">
-                        <Link href='/lipsticks'>
-                          <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>Lipstiks</a>
-                        </Link>
-                    </li>
-                    <li className="navitem">
                         <Link href='/Contact'>
                          <a className={isOpen === false ? 
                                     'navlink' : 'navlink active'}
                                     onClick={openMenu}>Contact</a>
+                        </Link>
+                    </li>
+                    <li className="navitem">
+                        <Link href='/about'>
+                         <a className={isOpen === false ? 
+                                    'navlink' : 'navlink active'}
+                                    onClick={openMenu}>About</a>
+                        </Link>
+                    </li>
+                    <li className="navitem">
+                        <Link href='/policy'>
+                         <a className={isOpen === false ? 
+                                    'navlink' : 'navlink active'}
+                                    onClick={openMenu}>policy</a>
                         </Link>
                     </li>
 

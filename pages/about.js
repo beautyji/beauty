@@ -31,14 +31,6 @@ Mrs. Imran</p>
 <p>Thanks For Visiting Our Site
 <span className={styles.red}> Have a nice day 💖</span></p>
 </div>
-<div className={styles.img}>
-              <Image
-                src="/img/car-info.png"
-                alt="car info"
-                width={450}
-                height={500}
-              />
-            </div>
 </div>
 </div>
 </>

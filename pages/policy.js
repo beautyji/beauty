@@ -5,8 +5,8 @@ export default function Policy  () {
 <>
 
 <Head>
-<title>Privacy Policy for Insurance And Products Info Of Car</title>
-<meta name="description" content="This is the Policy Page of Beauty Secret Shop💖 that help to know the policies of insurance and product info of car."/>
+<title>Privacy Policy for Beauty Secret Shop💖</title>
+<meta name="description" content="This is the Policy Page of Beauty Secret Shop💖 that help to know the policies of Beauty Secret Shop ."/>
 </Head>
 
          <div className={styles.policy}>
@@ -14,8 +14,8 @@ export default function Policy  () {
              <h1>Beauty Secret Shop💖 Privacy Polices</h1>
               </div>
            <div className={styles.content}>
-               
-           <h2>Privacy Policy for Insurance And Product Info Of Car</h2>
+            
+           <h2>Privacy Policy for Beauty Secret Shop💖 </h2>
 
 <p>At Beauty Secret Shop💖, accessible from Beauty Secret Shop💖.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Beauty Secret Shop💖 and how we use it.</p>
 
