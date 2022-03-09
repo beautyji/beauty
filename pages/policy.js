@@ -115,7 +115,7 @@ export default function Policy  () {
 <h2>Contact Us</h2>
 <p>Contact us for any query regarding our policies. We like to solve your queries and doubts regarding Beauty Secret Shop💖.</p>
 
-<h2>Thanks For Reading 💖</h2>
+<h2>Thanks For Reading Love From Beauty Secret Shop 💖</h2>
 
 </div>
          </div>
