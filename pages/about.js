@@ -29,7 +29,7 @@ Sincerely,
 
 Mrs. Imran</p>
 <p>Thanks For Visiting Our Site
-<span className={styles.red}> Have a nice day 💖</span></p>
+<span className={styles.red}> Have a nice day Love From Beauty Secret Shop 💖</span></p>
 </div>
 </div>
 </div>
