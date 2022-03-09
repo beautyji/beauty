@@ -11,6 +11,7 @@ class MyDocument extends Document {
           <link rel = "icon" href = 
             "/img/2.png" 
         type = "image/x-icon"/>
+     
           </Head>
           <body>
             <Main />

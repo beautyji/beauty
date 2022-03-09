@@ -1,5 +1,5 @@
 {
-  "name": "insurance-blog",
+  "name": "beauty-blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/react": "^17.0.39",
     "emailjs-com": "^3.2.0",
     "next": "11.1.0",
-    "next-sanity": "^0.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sitemap": "^7.0.0",
-    "typescript": "^4.3.5"
-  },
+    "react-infinite-scroll-component": "^6.1.0",
+    "sitemap": "^7.0.0"
+    },
   "devDependencies": {
     "@next/eslint-plugin-next": "^11.1.0",
     "eslint": "7.32.0",

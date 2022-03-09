@@ -1,79 +1,65 @@
 import { useRouter } from "next/router"
 import Head from "next/head"
 import styles from "../styles/Postpage.module.css"
-import {
-    sanityClient,
-    urlFor,
-    usePreviewSubscription,
-    PortableText,
-  } from "../lib/sanity";
+import React, { useState, useEffect } from 'react';
+import * as fs from 'fs';
   
-  const postQuery = `*[_type == "post" && slug.current == $slug][0]{
-        title,
-        slug,
-        mainImage,
-        body,
-        summary,
-      }`;
+
   
-  export default function OnePost({ data, preview }) {
-    if (!data) return <div>Loading...</div>;
-    const { data: post } = usePreviewSubscription(postQuery, {
-      params: { slug: data.post?.slug.current },
-      initialData: data,
-      enabled: preview,
-    });
+const Slug = (props) => {
+  function createMarkup(c) {
+    return { __html: c };
+  }
+  const [blog, setBlog] = useState(props.myBlog);
 
       const router = useRouter()
 
     return (
       <>
       <Head>
-      <meta name="title" content={post.title}/>
-      <meta name="description" content={post.summary}/>
+      <meta name="title" content={blog && blog.title}/>
+      <meta name="description" content={blog && blog.metadesc}/>
+      
 
       </Head>
       <div className={styles.container}>
       <article className={styles.post}>
         <main className={styles.content}>
-        <div><h1>{post.title}</h1></div>
-          <figure className={styles.image}>
-          <img src={urlFor(post?.mainImage).url()} alt={post.title} />
-          </figure>
+        <div><h1>{blog && blog.title}</h1></div>
+          {/* <figure className={styles.image}> */}
+          {/* <img src={urlFor(post?.mainImage).url()} alt={blog && blog.title} /> */}
+          {/* </figure> */}
           <div className={styles.breakdown}>
-            <PortableText
-              blocks={post?.body}
-              className={styles.body}
-            />
+          {blog && <div className={styles.body} dangerouslySetInnerHTML={createMarkup(blog.content)}></div>}
           </div>
         </main>
         <div className={styles.back}><button onClick={() => router.back()}>Go Back</button></div>
       </article>
-      {/*categories Area*/}
-    <div className={styles.category_heading}> 
-    <h2>Categories</h2></div>
     </div>
   </>
     );
   }
   
   export async function getStaticPaths() {
-    const paths = await sanityClient.fetch(
-      `*[_type == "post" && defined(slug.current)]{
-        "params": {
-          "slug": slug.current
-        }
-      }`
-    );
-  
+    let allb = await fs.promises.readdir(`blogdata`)
+    allb = allb.map((item)=>{
+      return { params: { slug: item.split(".")[0]} }
+    })
+    console.log(allb)
     return {
-      paths,
-      fallback: true,
+      paths: allb,
+      fallback: true // false or 'blocking'
     };
   }
   
-  export async function getStaticProps({ params }) {
-    const { slug } = params;
-    const post = await sanityClient.fetch(postQuery, { slug });
-    return { props: { data: { post }, preview: true } };
+  export async function getStaticProps(context) {
+    const { slug } = context.params;
+  
+  
+    let myBlog = await fs.promises.readFile(`blogdata/${slug}.json`, 'utf-8')
+  
+    return {
+      props: { myBlog: JSON.parse(myBlog) }, // will be passed to the page component as props
+    }
   }
+  export default Slug;

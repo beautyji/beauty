@@ -5,11 +5,9 @@ const sitemap = async (req, res) => {
   // An array with your links
   const links = [
     { url: "/", changefreq: "daily", priority: 0.7 },
-    { url: "/Car-Insurance", changefreq: "daily", priority: 1 },
-    { url: "/Drive-Safely", changefreq: "daily", priority: 0.7 },
+    { url: "/blog", changefreq: "daily", priority: 0.7 },
     { url: "/about", changefreq: "daily", priority: 0.7 },
     { url: "/policy", changefreq: "daily", priority: 0.7 },
-    { url: "/Accessories", changefreq: "daily", priority: 0.7 },
     { url: "/Contact", changefreq: "daily", priority: 0.7 },
 
   ];

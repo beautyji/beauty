@@ -29,24 +29,17 @@ export default function Navbar(){
                         </Link>
                     </li>
                     <li className="navitem">
+                        <Link href='/blog'>
+                         <a className={isOpen === false ? 
+                                    'navlink' : 'navlink active'}
+                                    onClick={openMenu}>Blog</a>
+                        </Link>
+                    </li>
+                    <li className="navitem">
                         <Link href='/Contact'>
                          <a className={isOpen === false ? 
                                     'navlink' : 'navlink active'}
                                     onClick={openMenu}>Contact</a>
-                        </Link>
-                    </li>
-                    <li className="navitem">
-                        <Link href='/about'>
-                         <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>About</a>
-                        </Link>
-                    </li>
-                    <li className="navitem">
-                        <Link href='/policy'>
-                         <a className={isOpen === false ? 
-                                    'navlink' : 'navlink active'}
-                                    onClick={openMenu}>policy</a>
                         </Link>
                     </li>
 

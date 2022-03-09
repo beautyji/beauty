@@ -20,8 +20,8 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
     {/* for adsense */}
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618995681841972"
-     crossOrigin="anonymous"/>
+    {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2618995681841972"
+     crossOrigin="anonymous"/> */}
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
