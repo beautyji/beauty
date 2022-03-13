@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 import styles from "../styles/Home.module.css"
 
 import * as fs from 'fs';
