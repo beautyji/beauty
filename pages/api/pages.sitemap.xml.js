@@ -8,7 +8,7 @@ const sitemap = async (req, res) => {
     { url: "/blog", changefreq: "daily", priority: 0.7 },
     { url: "/about", changefreq: "daily", priority: 0.7 },
     { url: "/policy", changefreq: "daily", priority: 0.7 },
-    { url: "/Contact", changefreq: "daily", priority: 0.7 },
+    { url: "/contact", changefreq: "daily", priority: 0.7 },
 
   ];
 
