@@ -36,7 +36,7 @@ export default function Navbar(){
                         </Link>
                     </li>
                     <li className="navitem">
-                        <Link href='/Contact'>
+                        <Link href='/contact'>
                          <a className={isOpen === false ? 
                                     'navlink' : 'navlink active'}
                                     onClick={openMenu}>Contact</a>
