@@ -20,6 +20,11 @@ const Blog = (props) => {
   };
 
   return <div className={styles.container}>
+    <Head>
+
+      <title>Beauty Secret Shop Blos On Cosmetics, Tips, And Brand Reviews</title>
+      <meta name="description" content="Best Place To learn About Beauty Tips and Triclks, beauty secrets, and brand reviews and their history by beauty secret shop your beauty partner"/>
+        </Head>
     <main>
         <h2 className={styles.h2}>Our Blogs</h2>
       <div
